@@ -4,6 +4,7 @@
   padding: 4px 20px;
   transition: opacity 0.5s;
   border-color: bisque;
+  color: rgb(255, 211, 196);
 
 
 
@@ -14,31 +15,32 @@
   opacity: 1;
   background-color: rgb(145, 168, 12);
   border-color: rgb(215, 204, 190);
-  color: rgb(222, 237, 225);
+  color: rgb(201, 245, 67);
 }
 
 .form-inline{
   margin-top: 90px;
-  
-  margin-bottom: 4px;
 
+  margin-bottom: 4px;
+  
 }
 
 
 h1.center {
   text-align: center; 
-  text-size-adjust: 400px;
-  /* width: 300px; */
-  /* margin-left: calc((100% - 300px) / 2); */
+  
+  font-size: 70px;
+  
   padding: 20px;
   color: #fff1c8;
 }
 
 form.center {
-  width: 70%;
+  width: 70px;
   /* margin-left:42%;  */
   /* margin-right:15%; */
   margin-top: 1%;
+  
 }
 
 
@@ -46,10 +48,10 @@ form.center {
 
 
 div.container {
-  width: 100%;
-  margin: 4%;
+  /* width: 100%;
+  margin: 4%; */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 30px;
+  /* font-size: 30px; */
 
 }
 
@@ -107,12 +109,16 @@ tbody, td, tfoot, th, thead, tr {
   /* border-width: 0; */
   font-weight: 900;
   word-break: break-all;
+  
 }
 thead{
-  font-size: 50px;
+  font-size: 20px;
+  color: aqua;
+  font-family: Impact, Haettenschweiler, sans-serif;
+  
 
 }
 td{
-  font-size: 35px;
+  font-size: 26px;
 }
 

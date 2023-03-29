@@ -15,13 +15,14 @@
 </head>
 
 <body>
-        <div class="bgImage">
+    <div class="bgImage">
 
+        <div class="container">
             <h1 class="center">Shopping List</h1>
 
             <div class="row">
-                <div class="col"></div>
-                <div class="col">
+                <div class="col-4"></div>
+                <div class="col-5">
 
                     <form class="form-inline" action="" method="post">
                         <label for=""></label>
@@ -32,12 +33,8 @@
                     </form>
 
                 </div>
-                <div class="col"></div>
+                <div class="col-3"></div>
             </div>
-
-
-
-
 
 
             <div class="row">
@@ -56,7 +53,7 @@
 
                             <?php for ($i = 0; $i < count($_SESSION['shop']); $i++) { ?>
                                 <tr>
-                                    <td ><?= $_SESSION['shop'][$i]["item"] ?></td>
+                                    <td><?= $_SESSION['shop'][$i]["item"] ?></td>
                                     <td><?= $_SESSION['shop'][$i]["category"] ?></td>
                                 </tr>
                             <?php } ?>
@@ -67,6 +64,7 @@
                 <div class="col-md-3"></div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 
 </html>
