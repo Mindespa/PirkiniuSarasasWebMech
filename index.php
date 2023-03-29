@@ -4,6 +4,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,27 +13,60 @@
     <link rel="stylesheet" href="./main.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Pirkinių sąrašas</h1>
-    <form action="" method="post">
-        <input type="text" name="Item">
-        <input type="text" name="Category">
-        <button class="btn btn-primary" id="btn" type="submit">Buy</button>
+        <div class="bgImage">
 
-    </form>
+            <h1 class="center">Shopping List</h1>
 
-    <table class="table table-striped">
-        <tr>
-            <th>Item</th>
-            <th>Category</th>
-        </tr>
-        <?php for ($i=0; $i < count($_SESSION['shop']); $i++) { ?>
-            <tr>
-                <td><?=$_SESSION['shop'][$i]["item"]?></td>
-                <td><?=$_SESSION['shop'][$i]["category"]?></td>
-            </tr>
-       <?php } ?>
-    </table>
-    
-</body>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+
+                    <form class="form-inline" action="" method="post">
+                        <label for=""></label>
+                        <input type="textitem" id="item" placeholder=" Add item" name="Item">
+                        <label for=""></label>
+                        <input type="textcategory" id="category" placeholder="Add category" name="Category">
+                        <button class="btn " id="btn" type="submit">Add to the list</button>
+                    </form>
+
+                </div>
+                <div class="col"></div>
+            </div>
+
+
+
+
+
+
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 shade">
+
+                    <table class="table">
+                        <thead>
+
+                            <tr>
+                                <th scope="">Item</th>
+                                <th scope="">Category</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <?php for ($i = 0; $i < count($_SESSION['shop']); $i++) { ?>
+                                <tr>
+                                    <td ><?= $_SESSION['shop'][$i]["item"] ?></td>
+                                    <td><?= $_SESSION['shop'][$i]["category"] ?></td>
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+
+                    </table>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </body>
+
 </html>

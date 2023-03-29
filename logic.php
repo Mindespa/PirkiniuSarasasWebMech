@@ -10,6 +10,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   die;
 }
 
-// print_r($_SESSION['shop']); // jei sita eilute meta erora del sitos eilutes - nekriepk demesio ir idek preke. dings
+if (!isset($_SESSION['shop'])) {
+  $_SESSION['shop'] = [];
+}
+
+
+
+
 
 
